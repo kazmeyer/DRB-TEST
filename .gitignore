@@ -29,6 +29,7 @@ old versions/
 *.swo
 *~
 .claude/settings.local.json
+*.code-workspace
 
 # OS
 .DS_Store
