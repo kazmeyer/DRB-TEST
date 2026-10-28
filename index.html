@@ -1,82 +1,206 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en" data-theme="light">
 <head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<title>Homepage - DRB Productions</title>
-
-	<link rel="stylesheet" href="css/main-a52fd19d.css" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-	<meta name="description" content="Web Developer / Usability Analyst / Designer who enjoys music, art, and running." />
-	<meta property="og:title" content="DRB Productions" />
-	<meta property="og:description" content="Web Developer / Usability Analyst / Designer who enjoys music, art, and running." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DRB Productions — Usability, Accessibility & Web Development</title>
+  <meta name="description" content="UX research, usability testing, accessibility reviews, and web design and development with Derek in Regina, Saskatchewan.">
 
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="DRB Productions — Usability, Accessibility & Web Development">
+  <meta property="og:description" content="UX research, usability testing, accessibility reviews, and web design and development with Derek in Regina, Saskatchewan.">
+  <meta property="og:type" content="website">
+<meta property="og:url" content="https://drbproductions.com/">
+  
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DRB Productions — Usability, Accessibility & Web Development">
+  <meta name="twitter:description" content="UX research, usability testing, accessibility reviews, and web design and development with Derek in Regina, Saskatchewan.">
+  
+
+<link rel="canonical" href="https://drbproductions.com/">
+
+  <!-- Theme: apply before CSS loads to prevent flash -->
+  <script>
+  (function(){
+    var t;
+    try { t = localStorage.getItem('theme'); } catch (e) { /* Storage is optional. */ }
+    if (t !== 'light' && t !== 'dark') t = null;
+    var d = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', t || (d ? 'dark' : 'light'));
+  })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Space+Mono:wght@400;700&amp;family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=98c1781c" />
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/manifest.webmanifest" />
 </head>
-<body id="homepage">
-<div id="left"></div>
-<div id="right"></div>
-<div id="top"></div>
-<div id="bottom"></div>
 
-<header>
-	<div class="inner_container">
-		<div id="logo">
-			<a href="/"><i class="mylogo" style="background-image: url(images/logo-675c3332.svg)">DRB Productions logo</i></a>
-		</div>
-		
-	</div>
+<body class="page-home">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header" role="banner">
+  <nav class="site-nav container" aria-label="Main navigation">
+
+    <a class="nav-logo" href="index.html" aria-label="DRB Productions — home">
+      <img class="logo-light" src="assets/drb-productions-logo-black.svg" alt="" width="64" height="33" aria-hidden="true">
+      <img class="logo-dark"  src="assets/drb-productions-logo-white.svg" alt="" width="64" height="33" aria-hidden="true">
+    </a>
+
+
+
+    <div class="nav-actions">
+      <button id="theme-toggle" type="button" class="icon-btn" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <use id="theme-icon" href="#icon-moon"></use>
+        </svg>
+      </button>
+
+      <a href="#contact" class="btn btn-accent nav-cta">Let&#x27;s talk <span aria-hidden="true">↗</span></a>
+
+    </div>
+
+  </nav>
 </header>
 
+<!-- SVG sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="12" y1="1"  x2="12" y2="3"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"   stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1"  y1="12" x2="3"  y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-moon" viewBox="0 0 24 24">
+    <path d="M 12 2 A 10 10 0 1 0 22 12 A 8 8 0 1 1 12 2 Z"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero-ed home-hero container" aria-labelledby="hero-title">
+  <div class="home-lead">
+    <h1 id="hero-title" class="heading-display">
+      <span class="row">Your website</span>
+      <span class="row">should work</span>
+      <span class="row">for</span>
+      <span class="row">everyone.</span>
+    </h1>
+    <div class="hero-bottom home-lead-bottom">
+      <p>I'm Derek. I help businesses and organizations figure out what's working, what isn't, and how to make things better.</p>
+      <p>Through usability testing, UX research, and accessibility reviews, I find the problems that get in people's way — and help you figure out what to do about them.</p>
+      <a class="home-text-link" href="#contact">Let's talk about your project <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <aside class="home-method" aria-label="The approach">
+    <p class="home-method-title">Less<br> guesswork.<br> <span>More<br> clarity.</span></p>
+    <ul role="list" class="home-method-list">
+      <li>Watch how people use your product.</li>
+      <li>Find the barriers in their way.</li>
+      <li>Make the next steps clear.</li>
+    </ul>
+  </aside>
+</section>
+
+<div class="home-middle container">
+  <section id="services" class="home-services" aria-labelledby="services-title">
+    <h2 id="services-title" class="heading-editorial">Services</h2>
+    <div class="home-service-grid">
+      <article class="home-service">
+        <h3>UX Research &amp; Usability Testing</h3>
+        <p>Learn how real people use your website or application, what they need, and where they struggle.</p>
+      </article>
+      <article class="home-service">
+        <h3>Expert Usability Reviews</h3>
+        <p>Identify confusing interactions and design problems, with practical recommendations for improvement.</p>
+      </article>
+      <article class="home-service">
+        <h3>Accessibility Testing</h3>
+        <p>Find accessibility barriers through manual and automated testing, and understand how to address them.</p>
+      </article>
+      <article class="home-service">
+        <h3>Web Design &amp; Development</h3>
+        <p>Design, build, and improve websites and interfaces with usability and accessibility in mind.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" class="home-experience" aria-labelledby="experience-title">
+    <h2 id="experience-title" class="heading-editorial">A bit about my experience</h2>
+    <p>I've spent a good part of my career working on complicated websites and applications, including government services and enterprise software.</p>
+    <div class="home-note">
+      <p>One thing I've learned is that something can work perfectly well from a technical standpoint and still be frustrating for the people using it. That's the kind of problem I enjoy figuring out.</p>
+    </div>
+  </section>
+</div>
+
+<section id="about" class="home-personal container" aria-labelledby="about-title">
+  <div>
+    <h2 id="about-title" class="heading-editorial">A little about me</h2>
+  </div>
+  <div class="home-personal-copy">
+    <p>I'm Derek, a designer, developer, and UX practitioner based in Regina, Saskatchewan.</p>
+    <p>I've worked on everything from websites and interactive learning materials to complex business applications. Along the way, I've worn a lot of different hats — designing interfaces, writing code, talking to users, and testing whether things actually work for them.</p>
+    <p>I like being involved in both sides of the process: figuring out what needs to be improved and getting my hands dirty making those improvements.</p>
+  </div>
+</section>
+
+<section id="contact" class="home-contact container" aria-labelledby="contact-title">
+  <div class="home-contact-panel">
+    <h2 id="contact-title" class="heading-display">Have something<br> you're working on?</h2>
+    <div class="home-contact-bottom">
+      <div>
+        <p>Whether you're planning something new or trying to improve an existing website or application, I'd be happy to hear about it.</p>
+        <p>Tell me a little about your project, and we can see if I'm a good fit.</p>
+      </div>
+      <a class="home-contact-link" href="mailto:hello@drbproductions.com">Get in touch <span aria-hidden="true">↗</span><span class="home-email">hello@drbproductions.com</span></a>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer-ed" role="contentinfo">
+  <div class="footer-ed-inner">
+    <div class="footer-ed-brand">
+      <a href="index.html" class="footer-ed-name" aria-label="DRB Productions — home">DRB Productions<span class="dot">.</span></a>
+
+    </div>
 
 
 
+    <div class="footer-ed-contact">
 
-<main id="homepage">
-	<div class="outer_container clearfix hero">
-		<div class="inner_container_home">
-			<div class="home-folio-img"><br>
-				<h1>Derek R. Barnes</h1>
-				<p><strong>Web Developer / Usability Analyst / Designer</strong> who enjoys music, art, and running.</p>
-			</div>
-			<div class="home-folio-desc">
-				<img src="images/metoo-db58b9ae.svg" alt="me">
-				<p>&nbsp;</p>
-			</div>
-		</div>
-	</div>
-	
-</main>
+<p><a href="mailto:hello@drbproductions.com">hello@drbproductions.com</a></p>
+    </div>
+  </div>
 
+  <div class="footer-ed-legal">
+    <span>&copy; <span id="yr"></span> DRB Productions</span>
 
-
-
-
-<footer>
-	<div class="inner_container">
-		
-		<div id="footer-copyright"><!-- <a href="mailto:website@drbproductions">website@drbproductions.com</a> | --> 
-			<script type="text/javascript">
-			 var dt = (new Date()).getFullYear()
-			 document.write("&copy; 2000-" + dt +" DRB Productions Ltd.");
-			</script>
-		</div>
-	</div>
+  </div>
 </footer>
-<script type="text/javascript" src="/js/main-5531bb57.js"></script>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<script src="assets/scripts.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 
-ga('create', 'UA-5952627-1', 'auto');
-ga('send', 'pageview');
+<!-- Animation layer: GSAP + ScrollTrigger via CDN.
+     Progressive enhancement — if these fail to load, animations.js
+     bails out and the site is fully functional and fully visible. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="assets/animations.js" defer></script>
 
-</script>
 </body>
 </html>
