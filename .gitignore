@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Build temporary files
+.dist_tmp/
+.preview/
+.preview_tmp/
+.preview_old/
+docs_old/
+
+# Old versions
+old versions/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+#misc
+Yollama_Help.md
+
+# Design references (local only)
+design-reference/
